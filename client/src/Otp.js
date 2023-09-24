@@ -4,6 +4,9 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import axios from 'axios'
 import './otp.css'
 import image from './undraw_confirmed_81ex.png'
+import battery from './Battery.png'
+import cellelur from './CellularConnection.png'
+import wifi from './Wifi.png'
 
 
 
@@ -32,34 +35,45 @@ export const Otp = () => {
             })
         }
     }
-    /* const getCurrentTime = () => {
+    const getCurrentTime = () => {
         const now = new Date();
         const hours = now.getHours().toString().padStart(2, '0');
         const minutes = now.getMinutes().toString().padStart(2, '0');
         return hours + ':' + minutes;
     }
 
-    const [time, setTime] = useState(getCurrentTime()) */
+    const [time, setTime] = useState(getCurrentTime())
 
     const verifyCode = async () => {
         await axios.post(`http://localhost:5000/api/verify-otp`, { phoneNumber, otp }).then((res) => {
 
-            if (res.data == "Invalid OTP") {
+            if (res.data === "Invalid OTP") {
                 alert(res.data)
                 return;
             }
-
             navigate('/success')
-
         }).catch((error) => {
-            console.log(error);
+            console.log(error.response.data.message);
+            if (error.response.data.message === "Invalid OTP") {
+                setOtp("")
+                alert(error.response.data.message)
+            }
         })
     }
+
     const handleChange = (newValue) => {
         setOtp(newValue)
     }
     return (
         <div className='otp' >
+            <div className="otp-header">
+                <div className="time">{time}</div>
+                <div className="header-icons">
+                    <img className="icon" src={cellelur} alt='cellular' />
+                    <img className="icon" src={wifi} alt='wifi' />
+                    <img className="icon" src={battery} alt='battery' />
+                </div>
+            </div>
             <img src={image} alt='imag' width={131.5} height={138} style={{ marginTop: '100px' }} />
             <div className="text-wrapper">Please verify Mobile number</div>
             <div className="text-wrapper">

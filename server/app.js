@@ -6,8 +6,8 @@ const app = express()
 const {connectDatabase} = require('./database')
 const userRouter = require('./routes/routes')
 
-const username = process.env.username;
-const password = process.env.password;
+/* const username = process.env.username;
+const password = process.env.password; */
 
 app.use(cors())
 app.use(express.json())
