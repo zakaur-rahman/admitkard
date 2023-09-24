@@ -1,0 +1,89 @@
+.otp {
+  width: 375px;
+  height: 812px;
+  background-color: #ffffff;
+}
+
+.text-wrapper {
+  margin: auto;
+  padding-top: 51px;
+  height: 23px;
+  width: 278px;
+  color: #333333;
+  font-family: "Work Sans-Regular", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+}
+.number-wrapper {
+  color: #666;
+  font-family: "Work Sans-Regular", Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.change-phone {
+  margin: auto;
+  width: 136px;
+  height: 14px;
+  padding-top: 8px;
+  color: #f7b348;
+  font-family: "Work Sans-Regular", Helvetica;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.MuiInputBase-root {
+  height: 48px;
+}
+
+.otp-data {
+  padding-top: 84px;
+  margin: auto;
+  width: 252px;
+}
+
+.resend-code {
+  margin: auto;
+  padding-top: 85px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.resend-code p {
+  color: #999;
+  font-family: Work Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.resend-code button {
+  margin-left: 16px;
+  color: #f7b348;
+  font-family: "Work Sans-Regular", Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  border-style: hidden;
+  background: none;
+}
+.resend-code button:hover {
+  text-decoration: underline;
+}
+
+.verify-btn {
+  margin: auto;
+  width: 224px;
+  height: 36px;
+  border-radius: 100px;
+  border-style: none;
+  background: #f7b348;
+  color: #fff;
+  text-align: center;
+  font-family: "Work Sans-Regular", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+}

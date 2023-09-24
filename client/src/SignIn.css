@@ -1,0 +1,85 @@
+.sign-in {
+  width: 375px;
+  height: 812px;
+  background-color: #ffffff;
+}
+
+.welcome {
+  margin: auto;
+  width: 234px;
+  padding-top: 111px;
+}
+
+h3 {
+  margin: auto;
+  width: 174px;
+  height: 28px;
+  color: #000;
+  font-family: "Work Sans-Medium", Helvetica;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.please-sign-in {
+  color: #666;
+  font-family: "Work Sans-Medium", Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.we-will-send {
+  padding-top: 20px;
+  width: 237px;
+  height: 19px;
+}
+
+.div1 {
+  width: 343px;
+  height: 44px;
+  color: #666;
+  font-family: "Work Sans-Medium", Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.contact {
+  padding-top: 68px;
+}
+
+.we-will-send-container {
+  margin: auto;
+  width: 343px;
+  height: 44px;
+  padding-top: 31px;
+  color: #999;
+  text-align: center;
+  font-family: "Work Sans-Medium", Helvetica;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.btn-div{
+    margin-top: 103px;
+}
+.btn {
+
+  width: 224px;
+  height: 36px;
+  flex-shrink: 0;
+  border-radius: 100px;
+  border-style: hidden;
+  background: #f7b348;
+  color: #fff;
+  text-align: center;
+  font-family: "Work Sans-Medium", Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
